@@ -1,26 +1,26 @@
-
 import React, { useState } from 'react';
 
-const App = () =>{
+const Demo = () =>{
 
-
-  const [num,setNum ] =  useState(0)
+  const [num, setNum] = useState(0);
 
   const increment = () =>{
-    setNum(num + 1)
+    setNum(num + 1);
   };
   const decrement = () =>{
-    if(num > 0) {
-    setNum(num - 1);
+    if(num> 0) {
+
+      setNum(num-1);
     }else{
-      alert("Don't Decrement")
+      alert("0 Is Limited Number");
       setNum(0)
     }
-  };
+    
+  }
 
-  return (
+  return(
     <>
-      <div className='main_div'>
+      <div className="main_div-div">
         <div className="center_div">
             <h1>{num}</h1>
             <div className="btn_div">
@@ -32,4 +32,4 @@ const App = () =>{
     </>
   )
 }
-export default App;
+export default Demo;
